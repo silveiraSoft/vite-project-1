@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 )
 */
 
-const app = <h1>Testing App</h1>;
+const app = <h1>Testing init App</h1>;
 const container= document.getElementById("root");
 
 ReactDOM.render(app, container);

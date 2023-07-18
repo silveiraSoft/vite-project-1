@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "aws s3 sync dist/ s3://asn-react-test",
+    "prod": "npm run build && npm run deploy"
   },
   "dependencies": {
     "react": "^18.2.0",
